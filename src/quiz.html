@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Trivia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <a href="index.html">
+        <p id="trivia">TRIVIA</p>
+    </a>
+    <div class="text">
+        <h1>Responda as perguntas abaixo:</h1>
+        <p>1 - Qual dessas opções não é uma linguagem de programação?</p>
+
+        <form id="form1">
+            <input name="radio" type="radio" value="errado1" id="wrong-answer1" />Ruby
+            <input name="radio" type="radio" value="errado2" id="right-answer1" />Javascript
+            <input name="radio" type="radio" value="certo" id="green1" />HTML
+            <input type="submit" id="btnsubmit1" class="btn" onClick="fSubmit1()" />
+        </form>
+        <br />
+        <div class="right" id="div-right">Resposta Correta!</div>
+        <div class="wrong" id="div-wrong">Tente Novamente</div>
+
+        <br />
+        <p>
+            2 - Qual dessas opções é uma das maneiras possiveis de definir uma
+            variavel em Javascript?
+        </p>
+
+        <form id="form2">
+            <input name="radio" type="radio" value="errado1" id="wrong-answer2" />Else
+            <input name="radio" type="radio" value="errado2" id="right-answer2" />If
+            <input name="radio" type="radio" value="certo" id="green2" />Number
+            <input type="submit" id="btnsubmit2" class="btn" onClick="fSubmit2()" />
+        </form>
+        <br />
+        <div class="right" id="div-right2">Resposta Correta!</div>
+        <div class="wrong" id="div-wrong2">Tente Novamente</div>
+
+        <br />
+
+        <p>3 - O elemento "title" deve estar dentro do elemento ?</p>
+        <form id="form3">
+            <input name="radio" type="radio" value="errado1" id="wrong-answer3" />Script
+            <input name="radio" type="radio" value="errado2" id="right-answer3" />Body <input name="radio" type="radio"
+                value="certo" id="green3" />Head
+            <input type="submit" id="btnsubmit3" class="btn" onClick="fSubmit3()" />
+        </form>
+        <br />
+        <div class="right" id="div-right3">Resposta Correta!</div>
+        <div class="wrong" id="div-wrong3">Tente Novamente</div>
+        <br />
+    </div>
+</body>
+
+</html>
