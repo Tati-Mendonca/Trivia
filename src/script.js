@@ -2,10 +2,8 @@
 var userName = "";
 function capture () {
     userName = document.getElementById('name').value;
-    document.getElementById('typedName').innerHTML = "Bem vinda: " + userName;
+    document.getElementById('wellcome').innerHTML = "Bem vinda: " + userName;
 }
-
-
 
 
 function fSubmit1() {
