@@ -12,6 +12,14 @@ a{
 a:visited { color: black } 
 a:hover { font-weight: bold } 
 
+#idsubmit{
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color:#000;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 17px;
+}
 
 #trivia{
     padding: 20px 30px;
