@@ -1,48 +1,119 @@
+* {
+    margin: 0;
+}
 
-body{
+body {
     background-color: #fce221;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
+    width: 100vw;
+    height: 100vh;
 }
 
-a{
-  text-decoration: none;
-}
-
-a:visited { color: black } 
-a:hover { font-weight: bold } 
-
-#idsubmit{
-    padding: 15px 30px;
-    border-radius: 10px;
-    background-color:#000;
-    color: #fff;
-    margin-top: 10px;
-    font-size: 17px;
-}
-
-#trivia{
+.trivia {
     padding: 20px 30px;
-    }
+}
 
-.main{
-    width: 45%;
-    margin: auto;
+.container {
+    display: flexbox;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    margin: 4% 0;
+}
+
+.center {
     text-align: center;
 }
 
-.text{
+#wellcome {
+    padding-bottom: 3%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
     width: 45%;
-    margin: auto;
+    padding: 2%;
 }
 
-h1{
-    font-size: 30px;
+.submit {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 1%;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    color: azure;
+    padding: 10px;
+    bottom: 0;
+}
+
+.footer a {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.quiz {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.text {
+    width: 25em;
+}
+
+.question{
+    padding: 2% 0;
+}
+
+form {
+    padding: 6px 0;
+}
+.radio{
+margin-right: 1%;
+}
+label{
+    padding: 0 5%;
+}
+.right {
+    display: none;
+    background: #00800080;
     text-align: center;
+    padding: -3px 5px;
 }
 
-.class{
-  text-align: center;
+.wrong {
+    display: none;
+    background: #ff000087;
+    text-align: center;
+    padding: -3px 5px;
 }
 
 .btn{
@@ -51,22 +122,52 @@ h1{
     float: right;
     background-color:#000;
     color: #fff;
+    margin-top: -5px;
 }
-
-form{
-  padding: 0px 20px;
-}
-
-.right {
-    display: none;
-    background:#00800080;
-    text-align: center;
-    padding: 5px;
-  }
-.wrong {
-    display: none;
-    background: #ff000087;
-    text-align: center;
-    padding: 5px;
-  }
  
+@media (max-width: 769px) { 
+    h1{
+        font-size: 1.8em;
+    }
+} 
+
+ 
+@media (max-width: 769px) {
+    h1{
+        font-size: 1.5em;
+    }
+ } 
+
+ @media (max-width:480px) { 
+    h1{
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+    .name {
+        width: 35%;
+        padding: 2%;
+    }
+
+    .text {
+        width: 18em;
+    }
+    .submit {
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 0.8em;
+    }
+    .footer{
+        font-size: 1em;
+    }
+
+    label{
+        padding: 0 2%;
+        font-size: 0.8em;
+    }
+    .btn{
+        padding: 3px 15px;
+        border-radius: 5px;
+
+    }
+     
+}

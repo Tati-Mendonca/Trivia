@@ -12,51 +12,66 @@
 
 <body>
     <a href="index.html">
-        <p id="trivia">TRIVIA</p>
+        <p class="trivia">TRIVIA</p>
     </a>
-    <div class="text">
-        <h1>Responda as perguntas abaixo:</h1>
-        <p>1 - Qual dessas opções não é uma linguagem de programação?</p>
+    <div class="quiz">
+        <div class="text">
+            <h1 class="center">Responda as perguntas abaixo:</h1>
+            <p class="question">1 - Qual das opções abaixo não é uma linguagem de programação?</p>
 
-        <form id="form1">
-            <input name="radio" type="radio" value="errado1" id="wrong-answer1" />Ruby
-            <input name="radio" type="radio" value="errado2" id="right-answer1" />Javascript
-            <input name="radio" type="radio" value="certo" id="green1" />HTML
-            <input type="submit" id="btnsubmit1" class="btn" onClick="fSubmit1()" />
-        </form>
-        <br />
-        <div class="right" id="div-right">Resposta Correta!</div>
-        <div class="wrong" id="div-wrong">Tente Novamente</div>
-
-        <br />
-        <p>
-            2 - Qual dessas opções é uma das maneiras possiveis de definir uma
-            variavel em Javascript?
-        </p>
-
-        <form id="form2">
-            <input name="radio" type="radio" value="errado1" id="wrong-answer2" />Else
-            <input name="radio" type="radio" value="errado2" id="right-answer2" />If
-            <input name="radio" type="radio" value="certo" id="green2" />Number
-            <input type="submit" id="btnsubmit2" class="btn" onClick="fSubmit2()" />
-        </form>
-        <br />
-        <div class="right" id="div-right2">Resposta Correta!</div>
-        <div class="wrong" id="div-wrong2">Tente Novamente</div>
-
-        <br />
-
-        <p>3 - O elemento "title" deve estar dentro do elemento ?</p>
-        <form id="form3">
-            <input name="radio" type="radio" value="errado1" id="wrong-answer3" />Script
-            <input name="radio" type="radio" value="errado2" id="right-answer3" />Body <input name="radio" type="radio"
-                value="certo" id="green3" />Head
-            <input type="submit" id="btnsubmit3" class="btn" onClick="fSubmit3()" />
-        </form>
-        <br />
-        <div class="right" id="div-right3">Resposta Correta!</div>
-        <div class="wrong" id="div-wrong3">Tente Novamente</div>
-        <br />
+            <form id="form1">
+                <label>
+                    <input name="radio" class="radio" type="radio" value="errado1" id="wrong-answer1" />Ruby
+                </label>
+                <label>
+                    <input name="radio" class="radio" type="radio" value="errado2" id="right-answer1" />Javascript
+                </label>
+                <label>
+                    <input name="radio" class="radio" type="radio" value="certo" id="green1" />HTML
+                </label>
+                <input type="submit" id="btnsubmit1" class="btn" onClick="fSubmit1()" />
+            </form>
+            <br />
+            <div class="right" id="div-right">Resposta Correta!</div>
+            <div class="wrong" id="div-wrong">Tente Novamente</div>
+            <br />
+            <p class="question">
+                2 - O elemento "title" deve estar dentro de qual tag?
+            </p>
+            <form id="form2">
+                <label>
+                    <input name="radio" class="radio" type="radio" value="errado1" id="wrong-answer2" />Script
+                </label>
+                <label>
+                    <input name="radio" class="radio" type="radio" value="certo" id="green2" />Head
+                </label>
+                <label>
+                    <input name="radio" class="radio" type="radio" value="errado2" id="right-answer2" />Body
+                </label>
+                <input type="submit" id="btnsubmit2" class="btn" onClick="fSubmit2()" />
+            </form>
+            <br />
+            <div class="right" id="div-right2">Resposta Correta!</div>
+            <div class="wrong" id="div-wrong2">Tente Novamente</div>
+            <br />
+            <p class="question">3 - Qual será o seguinte retorno do código: (10 > 9)</p>
+            <form id="form3">
+                <label>
+                    <input name="radio" class="radio" type="radio" value="certo" id="green3" />True
+                </label>
+                <label>
+                    <input name="radio" class="radio" type="radio" value="errado1" id="wrong-answer3" />False
+                </label>
+                <label>
+                    <input name="radio" class="radio" type="radio" value="errado2" id="right-answer3" />NaN
+                </label>
+                <input type="submit" id="btnsubmit3" class="btn" onClick="fSubmit3()" />
+            </form>
+            <br />
+            <div class="right" id="div-right3">Resposta Correta!</div>
+            <div class="wrong" id="div-wrong3">Tente Novamente</div>
+            <br />
+        </div>
     </div>
 </body>
 

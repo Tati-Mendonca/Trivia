@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Trivia</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-  </head>
-  <body>
-    <p id="trivia">TRIVIA</p>
+</head>
 
-    <div class="main">
-      <header>
-        <h1>Teste seu conhecimento em programação!</h1>
-      </header>
-
-      <div>
-        <input type="text" id="name" placeholder="Insira seu nome" />
-        <input type="submit" id="start" onclick="capture()" value="Começar" />
-        <p id="wellcome"></p>
-        <p id="typedName"></p>
-
-        <form action="quiz.html">
-          <input type="submit" id="idsubmit" value="Iniciar o Quiz" onclick=""/>
-        </form>
-      </div>
+<body>
+    <p class="trivia">TRIVIA</p>
+    <container class="container">
+    <div class="root">
+        <h1 class="center">Teste seus conhecimentos<br>em programação!</h1>
     </div>
-  </body>
+    <p id="wellcome" class="center"></p>
+    <div class="main">
+        <input type="text" id="name" class="name" placeholder="Insira seu nome" onkeyup="capture()" />
+        <a href="quiz.html" class="submit center">Iniciar o Quiz</a>
+    </div>
+</container>
+</body>
+<footer class="footer">
+    <p class="center">Desenvolvido por <a href="https://github.com/Tati-Mendonca">Tatiane Mendonça</a></p>
+</footer>
+
 </html>
