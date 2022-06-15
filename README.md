@@ -6,6 +6,4 @@ Esse foi meu primeiro projeto realizado em janeiro pela Lab.
 
 - HTML
 - CSS
-- Javascrip
-- Dom
-
+- Javascript
